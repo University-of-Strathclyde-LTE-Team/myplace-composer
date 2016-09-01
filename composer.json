@@ -1,18 +1,24 @@
 {
-	"name":"Myplace",
+	"name":"myplace/myplace",
+	"description":"University of Strathclyde VLE",
 	"version": "13",
 	"require": {
-		"myplace/moodle": "3.1.0",
-		"myplace/mod-strathcom": "10.0.*"
+		"moodle/moodle": "dev-master",
+		"myplace-plugin/block-strathcomnews":"dev-composer-v9"
 	},
 	"repositories": [
-		{	
-			"type":"vcs",
-			
 		{
-			"type":"vcs",
-			"url":"https://svn.strath.ac.uk/repos/moodle"
+			"type":"git",
+			"url":"git@github.com:moodle/moodle.git"
+		},
+		
+		{
+			"type":"composer",
+			"url":"http://wiki.lte.strath.ac.uk/download/attachments/11763989/packages.json?api=v2"
 		}
-	]
+	],
+	"config": {
+	    "secure-http":false
+	}	
 
 }
