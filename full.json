@@ -1,0 +1,28 @@
+{
+	"name":"Myplace",
+	"version": "13",
+	"require": {
+		"myplace/moodle": "dev-master",
+		"myplace/mod-strathcom": "10.0.*"
+	},
+	"repositories": [
+		{
+			"type":"git",
+			"url":"git@github.com:moodle/moodle.git"
+		}
+		{
+			"type":"svn",
+			"url":"https://svn.strath.ac.uk/repos/moodle",
+			"branches-path":"branches/",
+			"tags-path":"tags/",
+			"trunk-path":"trunk/"
+		},
+		{
+			"type":"svn",
+			"url":"https://svn.strath.ac.uk/repos/moodle/core2/",
+		    "branches-path":"branches/",
+		    "trunk-path":"releases/"
+		},
+	]
+
+}
