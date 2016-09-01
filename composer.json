@@ -4,7 +4,7 @@
 	"version": "13",
 	"require": {
 		"moodle/moodle": "dev-master",
-		"myplace/block-strathcomnews":"dev-composer-v9"
+		"myplace-plugin/block-strathcomnews":"dev-composer-v9"
 	},
 	"repositories": [
 		{
@@ -16,6 +16,9 @@
 			"type":"composer",
 			"url":"http://wiki.lte.strath.ac.uk/download/attachments/11763989/packages.json?api=v2"
 		}
-	]
+	],
+	"config": {
+	    "secure-http":false
+	}	
 
 }
